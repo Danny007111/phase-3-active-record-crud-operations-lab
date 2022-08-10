@@ -39,7 +39,7 @@ class Movie < ActiveRecord::Base
       end
     
       def self.delete_by_id(id)
-        Movie.find(id).destroy
+        self.find(id).destroy
         
       end
     
